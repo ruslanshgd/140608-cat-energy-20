@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Ruslan Sharipov](https://up.htmlacademy.ru/adaptive/20/user/140608).
-* Наставник: `Неизвестно`.
+- Студент: [Ruslan Sharipov](https://up.htmlacademy.ru/adaptive/20/user/140608).
+- Наставник: [Татьяна Симоненко](https://htmlacademy.ru/profile/tatien).
 
 ---
 
