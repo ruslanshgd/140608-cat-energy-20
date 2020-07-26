@@ -4,9 +4,126 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>HTML Academy: Кэт энерджи</title>
 </head>
 
-<body></body>
+<body>
+  <header class="page-header">
+    <nav class="main-nav">
+      <div class="main-nav__header">
+        <img src="https://via.placeholder.com/32x32" alt="Логотип Cat Energy">
+        <img src="https://via.placeholder.com/101x18" alt="Надпись Cat Energy">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item"><a href="index.html">Главная</a></li>
+        <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
+        <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <div class="container">
+      <section class="catalog">
+        <h1 class="catalog__title">Каталог продукции</h1>
+        <ul class="catalog-list">
+          <li class="catalog-list__item">
+            <div class="catalog-list__link">
+              <div class="catalog-list__wrapper">
+                <div class="catalog-list__image">
+                  <img src="https://via.placeholder.com/140x112" alt="Изображение упаковки продукта">
+                </div>
+                <div class="catalog-list__description">
+                  <h3 class="catalog-list__product-name">Cat Energy Pro 500 Г</h3>
+                  <ul class="structure-list">
+                    <li class="structure-list__item">
+                      <span class="structure-list__option">Масса</span>
+                      <span class="structure-list__value">500 г.</span>
+                    </li>
+                    <li class="structure-list__item">
+                      <span class="structure-list__option">Вкус</span>
+                      <span class="structure-list__value">Курица</span>
+                    </li>
+                    <li class="structure-list__item">
+                      <span class="structure-list__option">Цена</span>
+                      <span class="structure-list__value">700 Р.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a href="#" class="button button--order">Заказать</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <div class="show-more">
+        <img src="https://via.placeholder.com/30x30" alt="Иконка значка плюс">
+        <h3 class="show-more-title">Показать еще 100500 товаров</h3>
+        <p class="show-more-text">На самом деле вкусов гораздо больше</p>
+        <a href="#" class="button button--more">Показать все</a>
+      </div>
+      <section class="additional-product">
+        <h2 class="additional-product__title">Дополнительные товары</h2>
+        <ul class="additional-product__list">
+          <li class="additional-product__item">
+            <div class="additional-product__link">
+              <h3 class="additional-product__product-name">Сахарозаменитель</h3>
+              <ul class="structure-list">
+                <li class="structure-list__item">
+                  <span class="structure-list__option">1 упаковка (100гр)</span>
+                  <span class="structure-list__value">200 Р.</span>
+                </li>
+              </ul>
+              <a href="#" class="button button-order">Заказать</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <div class="gift">
+        <img class="gift__icon" src="https://via.placeholder.com/80x80" alt="Иконка, изображающая подарочную коробку">
+        <h3 class="gift__title">Закажите все и получите чехол для кота в подарок!</h3>
+      </div>
+      <div class="contacts">
+        <h2 class="contacts__title">Приглашаем
+          к сотрудничеству
+          дилеров!</h2>
+        <p class="contacts__address">ул. Большая<br>
+          Конюшенная, д. 19/8<br>
+          Санкт-Петербург</p>
+      </div>
+      <div class="location">
+        <img src="https://via.placeholder.com/320x320" alt="Изображение карты">
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <img class="page-footer__logo" src="https://via.placeholder.com/128x24" alt="Логотип Cat Energy">
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="#">
+            <img src="https://via.placeholder.com/24x24" alt="Логотип Cat Energy">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="#">
+            <img src="https://via.placeholder.com/24x24" alt="Логотип Cat Energy">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">
+            <img src="https://via.placeholder.com/24x24" alt="Логотип Cat Energy">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">HTML Academy</p>
+      <img src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy">
+    </div>
+  </footer>
+</body>
 
 </html>
