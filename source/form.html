@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="main-nav">
+      <div class="main-nav__header">
+        <img src="https://via.placeholder.com/32x32" alt="Логотип Cat Energy">
+        <img src="https://via.placeholder.com/101x18" alt="Надпись Cat Energy">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item"><a href="index.html">Главная</a></li>
+        <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
+        <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <div class="page-main__container">
+      <form class="programs" action="https://echo.htmlacademy.ru" method="get">
+        <h1 class="programs__title">Подбор программы</h1>
+        <p class="programs__description">Заполните анкету, и мы подберем
+          программу питания для вашего кота</p>
+        <fieldset class="filter-group">
+          <legend class="visually-hidden filter-group__title">Данные кота</legend>
+          <ul class="filter-list">
+            <li class="filter-list__item">
+              <label class="filter-list__label" for="name">
+                Имя:*
+              </label>
+              <input required class="filter-list__input" type="text" id="name" />
+            </li>
+            <li class="filter-list__item">
+              <label class="filter-list__label" for="weight">
+                Вес (кг):*
+              </label>
+              <input required class="filter-list__input" type="number" id="weight" />
+            </li>
+            <li class="filter-list__item">
+              <label class="filter-list__label" for="age">
+                Возраст (лет):*
+              </label>
+              <input class="filter-list__input" type="number" id="age" />
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter-group">
+          <legend class="visually-hidden filter-group__title">Цель:</legend>
+          <ul class="filter-list">
+            <li class="filter-list__item">
+              <input class="visually-hidden filter-list__input radiobutton-input" type="radio" name="programm"
+                id="skinny" />
+              <label class="filter-list__label" for="skinny">
+                Похудение
+              </label>
+            </li>
+            <li class="filter-list__item">
+              <input class="visually-hidden filter-list__input radiobutton-input" type="radio" name="programm"
+                id="muscle" />
+              <label class="filter-list__label" for="muscle">
+                Набор массы
+              </label>
+            </li>
+            <li class="filter-list__item">
+              <input class="visually-hidden filter-list__input radiobutton-input" type="radio" name="programm"
+                id="dontknow" />
+              <label class="filter-list__label" for="dontknow">
+                Не знаю (нужен ващ совет)
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter-group">
+          <legend class="filter-group__title">Контактные данные (владельца кота)</legend>
+          <ul class="filter-list">
+            <li class="filter-list__item">
+              <label class="filter-list__label" for="email">
+                Email:*
+              </label>
+              <div class="filter-list__wrapper">
+                <input required class="filter-list__input" type="email" id="email" />
+              </div>
+            </li>
+            <li class="filter-list__item">
+              <label class="filter-list__label" for="tel">
+                Телефон:*
+              </label>
+              <div class="filter-list__wrapper">
+                <input required class="filter-list__input" type="tel" id="tel" />
+              </div>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter-group">
+          <legend class="filter-group__title">Комментарий</legend>
+          <textarea name="comment" id="comment" cols="30" rows="8"></textarea>
+        </fieldset>
+        <fieldset class="filter-group">
+          <legend class="filter-group__title">Дополнительно</legend>
+          <ul class="filter-list">
+            <li class="filter-list__item">
+              <input class="visually-hidden filter-list__input checkbox-input" type="checkbox" name="sugarreplacement"
+                id="filter-sugarreplacement" checked />
+              <label for="filter-sugarreplacement">
+                Сахарозаментиль
+              </label>
+            </li>
+            <li class="filter-list__item">
+              <input class="visually-hidden filter-list__input checkbox-input" type="checkbox" name="water"
+                id="filter-water" />
+              <label for="filter-water">
+                Питьевая вода
+              </label>
+            </li>
+            <li class="filter-list__item">
+              <input class="visually-hidden filter-list__input checkbox-input" type="checkbox" name="milk"
+                id="filter-milk" />
+              <label for="filter-milk">
+                Молоко
+              </label>
+            </li>
+            <li class="filter-list__item">
+              <input class="visually-hidden filter-list__input checkbox-input" type="checkbox" name="vitamins"
+                id="filter-vitamins" />
+              <label for="filter-vitamins">
+                Витамины
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="button button--order">Отправить заявку</button>
+        <p class="programs__explainer">* — Обязательные поля</p>
+      </form>
+      <div class="contacts">
+        <h2 class="contacts__title">Приглашаем
+          к сотрудничеству
+          дилеров!</h2>
+        <p class="contacts__address">ул. Большая<br>
+          Конюшенная, д. 19/8<br>
+          Санкт-Петербург</p>
+      </div>
+      <div class="location">
+        <img src="https://via.placeholder.com/320x320" alt="Изображение карты">
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <img class="page-footer__logo" src="https://via.placeholder.com/128x24" alt="Логотип Cat Energy">
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="#">
+            <img src="https://via.placeholder.com/24x24" alt="Логотип Cat Energy">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="#">
+            <img src="https://via.placeholder.com/24x24" alt="Логотип Cat Energy">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">
+            <img src="https://via.placeholder.com/24x24" alt="Логотип Cat Energy">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">HTML Academy</p>
+      <img src="https://via.placeholder.com/27x34" alt="Логотип HTML Academy">
+    </div>
+  </footer>
+</body>
+
+</html>
