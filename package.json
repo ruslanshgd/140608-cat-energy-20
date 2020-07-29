@@ -35,5 +35,8 @@
   ],
   "engines": {
     "node": "12.18.2"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2"
   }
 }
