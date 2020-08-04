@@ -1,4 +1,31 @@
-// Начните писать стили здесь
-body {
-  background: red;
+@import "libs/normalize";
+@import "variables";
+@import "page";
+@import "main-nav";
+@import "button";
+@import "categories";
+@import "blocks/promo";
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.container {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }

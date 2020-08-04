@@ -1,0 +1,27 @@
+.button {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: $color-white;
+  transition: 0.3s;
+}
+
+.button-order {
+  background-color: $color-primary;
+}
+
+
+@media (min-width: $tablet) {
+  .button-order {
+    font-size: 20px;
+    width: auto;
+    padding: 16px 20px;
+  }
+}

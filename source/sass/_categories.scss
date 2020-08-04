@@ -1,0 +1,126 @@
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.categories__column {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.categories__item {
+  position: relative;
+  background-color: $color-grey;
+  padding: 30px 20px 20px;
+  margin-bottom: 20px;
+}
+
+.categories__img {
+  position: absolute;
+  top: 25px;
+  width: 50px;
+  height: 50px;
+  background: #68b738;
+  border-radius: 50%;
+}
+
+.categories__icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.categories__title {
+  margin-top: 0px;
+  padding-left: 72px;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color-black;
+  margin-bottom: 35px;
+}
+
+.categories__description {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-dark-grey;
+  padding-bottom: 20px;
+  margin-bottom: 19px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.categories__link {
+  position: relative;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-black;
+  z-index: 1;
+  padding-right: 15px;
+  background: $color-grey;
+}
+
+.categories__link::after {
+  content: "";
+  position: absolute;
+  right: -26px;
+  top: 50%;
+  width: 32px;
+  height: 11px;
+  background: url("../img/icon-right-arrow-verylong.svg") no-repeat center;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: 0.3s;
+
+}
+
+.categories__link:hover::after {
+  right: -32px;
+}
+
+@media (min-width: $tablet) {
+  .categories__item {
+    padding: 77px 315px 58px 52px;
+  }
+
+  .categories__img {
+    right: 60px;
+    top: 80px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .categories__icon--slim {
+    top: 42%;
+    width: 69%;
+    height: 100%;
+  }
+  .categories__icon--pro {
+    width: 133%;
+    height: 100%;
+  }
+
+  .categories__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 0;
+  }
+
+  .categories__description {
+    margin-bottom: 48px;
+    border-bottom: none;
+  }
+
+}
+
+@media (min-width: $desktop) {
+  .categories {
+    flex-direction: row;
+  }
+}
