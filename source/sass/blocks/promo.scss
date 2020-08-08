@@ -26,9 +26,9 @@
 
 @media (min-width: $tablet) {
   .promo {
-    min-height: 700px;
-    padding-left: 90px;
-    padding-top: 55px;
+    min-height: 820px;
+    padding-left: 92px;
+    padding-top: 16px;
     margin-bottom: 5px;
     text-align: left;
   }
@@ -45,13 +45,13 @@
     font-size: 20px;
     line-height: 20px;
     color: $color-black;
-    margin-bottom: 52px;
+    margin-bottom: 48px;
   }
 
   .promo__image {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: -44px;
+    right: 10px;
     margin: 0 auto;
     z-index: -1;
   }
