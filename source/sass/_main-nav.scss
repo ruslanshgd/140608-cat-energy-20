@@ -102,7 +102,7 @@
   }
 
   .main-nav__list {
-    margin-top: 18px;
+    margin-top: 20px;
   }
 
   .site-list {
@@ -114,18 +114,18 @@
     line-height: 24px;
     margin: 0;
     border: none;
-    padding: 10px 16px;
+    padding: 10px 11px;
   }
 
   .site-list__link--active::after {
     content: "";
     position: absolute;
-    bottom: -2px;
-    left: 15px;
+    bottom: 0;
+    left: 13px;
     right: 0;
     height: 2px;
     background: $color-primary;
-    width: calc(100% - 30px);
+    width: calc(100% - 24px);
   }
 
   .page-header__logo {
