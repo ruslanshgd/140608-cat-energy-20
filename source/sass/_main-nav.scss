@@ -133,3 +133,13 @@
     height: 50px;
   }
 }
+
+@media (min-width: $desktop) {
+  .page-header--background .site-list__link {
+    color: $color-white;
+  }
+
+  .page-header--background .site-list__link--active::after {
+    background: $color-white;
+  }
+}

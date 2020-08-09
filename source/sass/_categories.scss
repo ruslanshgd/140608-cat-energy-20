@@ -87,6 +87,9 @@
 @media (min-width: $tablet) {
   .categories {
     margin-top: 44px;
+    margin-left: -30px;
+    margin-right: -30px;
+
   }
 
   .categories__item {
@@ -136,6 +139,44 @@
 
 @media (min-width: $desktop) {
   .categories {
-    flex-direction: row;
+    margin-left: -40px;
+    margin-right: -40px;
+    margin-bottom: 56px;
+  }
+
+  .categories__column {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .categories__item {
+    padding: 79px 52px 60px;
+    margin-bottom: 0;
+  }
+
+  .categories__img {
+    top: 45px;
+    right: inherit;
+    width: 100px;
+    height: 100px;
+  }
+
+  .categories__icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .categories__title {
+    padding-left: 160px;
+    margin-bottom: 70px;
+  }
+
+  .categories__description {
+    margin-bottom: 15px;
   }
 }

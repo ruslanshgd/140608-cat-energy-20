@@ -58,4 +58,18 @@
   }
 }
 
-
+@media (min-width: $tablet) {
+  .promo {
+    padding-left: 150px;
+    padding-top: 95px;
+    min-height: 644px;
+  }
+  .promo__image {
+    position: absolute;
+    top: 55px;
+    left: 59%;
+    bottom: inherit;
+    margin: auto;
+    transform: translateX(-34%);
+  }
+}
