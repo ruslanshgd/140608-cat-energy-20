@@ -1,1 +1,51 @@
-// Начните писать стили здесь
+@import "libs/normalize";
+@import "variables";
+@import "page";
+@import "main-nav";
+@import "site-list";
+@import "toggle-menu";
+@import "button";
+@import "categories";
+@import "blocks/promo";
+@import "blocks/howitsworks";
+@import "blocks/catalog";
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.container {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: $tablet) {
+  .container {
+    max-width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .container {
+    max-width: 1300px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
