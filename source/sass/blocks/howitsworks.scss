@@ -88,8 +88,11 @@
   }
 
   .howitsworks__list {
+    margin-left: -30px;
+    margin-right: -30px;
     margin-bottom: 9px;
   }
+
   .howitsworks__item {
     flex: 0 0 50%;
     max-width: 50%;
@@ -119,4 +122,18 @@
     z-index: -1;
   }
 
+}
+
+@media (min-width: $desktop) {
+  .howitsworks__list {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+
+  .howitsworks__item {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
