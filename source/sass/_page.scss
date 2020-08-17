@@ -7,20 +7,3 @@
   line-height: 18px;
   color: $color-dark-grey;
 }
-
-.social__list {
-  width: 100%;
-  list-style: none;
-  margin: 0;
-  padding: 20px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
-}
-
-.social__item {
-  margin: 0 16px;
-  cursor: pointer;
-}

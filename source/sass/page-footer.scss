@@ -55,9 +55,19 @@
     padding-right: 30px;
   }
 
-  .page-footer__copyright{
+  .page-footer__copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
     padding-left: 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-footer__row {
+    margin-left: -40px;
+    margin-right: -40px;
   }
 }

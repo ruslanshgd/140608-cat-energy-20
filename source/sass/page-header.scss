@@ -49,9 +49,17 @@
 }
 
 @media (min-width: $desktop) {
+  .page-header__logo {
+    padding-top: 5px;
+  }
+
+  .page-header__container {
+    padding-top: 43px;
+  }
+
   .page-header--background::after {
     display: block;
-    width: 44%;
+    width: 50%;
     min-height: 694px;
     top: 0;
     right: 0;
