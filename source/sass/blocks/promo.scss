@@ -1,5 +1,5 @@
 .promo {
-  min-height: 480px;
+  min-height: 478px;
   position: relative;
   text-align: center;
 }
@@ -46,7 +46,7 @@
     font-size: 20px;
     line-height: 20px;
     color: $color-black;
-    margin-bottom: 46px;
+    margin-bottom: 52px;
   }
 
   .promo__image {
@@ -58,16 +58,17 @@
   }
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $desktop) {
   .promo {
-    padding-left: 150px;
-    padding-top: 95px;
+    padding-left: 80px;
+    padding-top: 65px;
     min-height: 644px;
+    margin-bottom: 11px;
   }
   .promo__image {
     position: absolute;
-    top: 55px;
-    left: 59%;
+    top: 21px;
+    left: 48%;
     bottom: inherit;
     margin: auto;
     transform: translateX(-34%);

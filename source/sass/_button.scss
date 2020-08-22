@@ -11,10 +11,15 @@
   text-align: center;
   color: $color-white;
   transition: 0.3s;
+  background: $color-primary;
 }
 
-.button-order {
-  background-color: $color-primary;
+.button:hover {
+  background: $color-primary-hover;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button--medium {
