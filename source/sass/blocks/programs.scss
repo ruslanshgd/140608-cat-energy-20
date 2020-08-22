@@ -55,6 +55,9 @@
 }
 
 @media (min-width: $tablet) {
+  .programs {
+    margin-bottom: 70px;
+  }
   .programs__explainer {
     margin: 12px 0;
     text-align: left;
@@ -102,6 +105,9 @@
 }
 
 @media (min-width: $desktop) {
+  .programs {
+    margin-bottom: 80px;
+  }
   .programs__field {
     margin-bottom: 67px;
   }
