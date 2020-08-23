@@ -27,6 +27,16 @@
   line-height: 20px;
 }
 
+.button--light {
+  background: #f2f2f2;
+  color: #444444;
+}
+.button--light:hover {
+  background: #ebebeb;
+}
+.button--light:active {
+  color: rgba(17, 17, 17, 0.3);
+}
 
 @media (min-width: $tablet) {
   .button-order {

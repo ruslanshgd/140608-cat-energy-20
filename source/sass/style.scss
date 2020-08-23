@@ -1,60 +1,37 @@
 @import "libs/normalize";
-@import "variables";
-@import "overflow";
-@import "title";
-@import "page";
-@import "page-header";
-@import "page-footer";
-@import "main-nav";
-@import "site-list";
-@import "toggle-menu";
-@import "button";
-@import "categories";
-@import "social";
+@import "base/variables";
+@import "base/visually-hidden";
+@import "base/overflow";
+@import "base/title";
+@import "base/title-text";
+@import "base/title-line";
+
+@import "layout/container";
+@import "layout/page";
+@import "layout/page-header";
+@import "layout/page-footer";
+@import "layout/main-nav";
+@import "layout/site-list";
+@import "layout/toggle-menu";
+
+@import "components/button";
+
+@import "blocks/categories";
+@import "blocks/social";
 @import "blocks/promo";
 @import "blocks/howitsworks";
 @import "blocks/example";
 @import "blocks/comparing";
 @import "blocks/catalog";
+@import "blocks/product";
+@import "blocks/product-more";
+@import "blocks/additional-product";
+@import "blocks/additional-list";
 @import "blocks/programs";
 @import "blocks/form-field";
 @import "blocks/contacts";
 @import "blocks/map";
 @import "blocks/form-type.scss";
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
-.container {
-  position: relative;
-  display: block;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-@media (min-width: $tablet) {
-  .container {
-    max-width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-
-@media (min-width: $desktop) {
-  .container {
-    max-width: 1300px;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
 
 *,
 *::before,

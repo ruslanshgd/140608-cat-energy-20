@@ -1,21 +1,3 @@
-.title {
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 1;
-  color: $color-black;
-  margin-bottom: 40px;
-  margin-top: 0;
-  padding-top: 32px;
-}
-
-.title-text {
-  text-transform: uppercase;
-  margin-bottom: 35px;
-  margin-top: 0;
-  max-width: 270px;
-  color: $color-black;
-}
-
 .title-line {
   font-weight: 400;
   font-size: 24px;
@@ -58,22 +40,6 @@
 }
 
 @media (min-width: $tablet) {
-  .title {
-    font-size: 60px;
-    margin-bottom: 55px;
-    padding-top: 55px;
-  }
-  .title-text {
-    font-size: 20px;
-    line-height: 30px;
-    margin-left: 40px;
-    margin-bottom: 65px;
-    max-width: 330px;
-  }
-  .title--main {
-    padding-top: 43px;
-    margin-bottom: 70px;
-  }
   .title-line {
     padding-right: 40px;
     margin-bottom: 75px;
@@ -82,20 +48,13 @@
   .title-line--ident {
     margin-bottom: 50px;
   }
+  .title-line--left {
+    margin-left: 0;
+    margin-bottom: 80px;
+  }
 }
 
 @media (min-width: $desktop) {
-  .title {
-    padding-top: 68px;
-    margin-bottom: 56px;
-  }
-  .title-text {
-    font-size: 20px;
-    line-height: 30px;
-    margin-left: 0;
-    margin-bottom: 65px;
-    max-width: 330px;
-  }
   .title-line--width {
     margin-bottom: 76px;
   }

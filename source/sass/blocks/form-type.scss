@@ -1,7 +1,5 @@
 .form-type {
 	font-size: 16px;
-	font-weight: 400;
-	font-family: "Oswald", "Arial", sans-serif;
 	color: #111111;
 	position: relative;
 	display: block;
@@ -51,8 +49,8 @@
 	margin-top: -3px;
 	width: 12px;
 	height: 21px;
-	border-right: 1px solid #68b738;
-	border-bottom: 1px solid #68b738;
+	border-right: 1px solid $color-primary;
+	border-bottom: 1px solid $color-primary;
 	-webkit-transform: translateY(-50%) rotate(45deg);
 	transform: translateY(-50%) rotate(45deg);
 }
@@ -72,7 +70,7 @@
 	height: 12px;
 	border-radius: 50%;
 	border: none;
-	background: #68b738;
+	background: $color-primary;
 	margin-top: 0;
 }
 
