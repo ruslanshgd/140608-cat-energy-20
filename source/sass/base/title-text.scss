@@ -1,0 +1,27 @@
+.title-text {
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  margin-top: 0;
+  max-width: 270px;
+  color: $color-black;
+}
+
+@media (min-width: $tablet) {
+  .title-text {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 40px;
+    margin-bottom: 65px;
+    max-width: 330px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .title-text {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 0;
+    margin-bottom: 65px;
+    max-width: 330px;
+  }
+}
