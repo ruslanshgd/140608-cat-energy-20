@@ -11,12 +11,13 @@
   user-select: none;
   cursor: pointer;
 }
+
 .toggle-menu::before {
   content: "";
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   background-image: url("../img/ic_burger-menu.svg");
   background-repeat: no-repeat;
   background-size: 24px 16px;
@@ -25,12 +26,13 @@
   height: 24px;
   z-index: -1;
 }
+
 .toggle-menu--close::after {
   content: "";
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   background-color: $color-white;
   background-image: url("../img/icon-close.svg");
   background-repeat: no-repeat;
@@ -40,6 +42,7 @@
   height: 24px;
   z-index: 1;
 }
+
 @media (min-width: $tablet) {
   .toggle-menu {
     display: none;

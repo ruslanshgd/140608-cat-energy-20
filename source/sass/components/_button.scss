@@ -13,26 +13,33 @@
   transition: 0.3s;
   background: $color-primary;
 }
+
 .button:hover {
   background: $color-primary-hover;
 }
+
 .button:active {
   color: rgba(255, 255, 255, 0.3);
 }
+
 .button--medium {
   font-size: 16px;
   line-height: 20px;
 }
+
 .button--light {
   background: $color-grey;
   color: $color-dark-grey;
 }
+
 .button--light:hover {
   background: $color-border-light;
 }
+
 .button--light:active {
   color: rgba(17, 17, 17, 0.3);
 }
+
 @media (min-width: $tablet) {
   .button-order {
     font-size: 20px;
