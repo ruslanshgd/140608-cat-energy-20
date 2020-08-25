@@ -13,6 +13,7 @@
   margin: 0;
   text-transform: uppercase;
   max-width: 160px;
+  color: $color-dark-grey-3;
 }
 
 .contacts__text {
@@ -21,7 +22,7 @@
   line-height: 21px;
   max-width: 160px;
   width: 100%;
-  font-family: "Arial", "Tahoma", sans-serif;
+  font-family: $font-secondary;
 }
 
 @media (min-width: $tablet) {
@@ -38,6 +39,7 @@
   .contacts__text {
     text-align: right;
   }
+
   .contacts__text span {
     display: block;
     margin-top: 15px;
@@ -51,16 +53,15 @@
     top: 0%;
     max-width: 570px;
     width: 100%;
-    background: #ffffff;
-    padding: 32px 35px;
-    transform: translateY(48%);
-  }
-
-  .contacts__title {
-
+    height: 200px;
+    background: $color-white;
+    padding: 62px 77px;
+    transform: translateY(49%);
   }
 
   .contacts__text {
-
+    text-align: left;
+    margin-right: 6px;
+    margin-top: 2px;
   }
 }

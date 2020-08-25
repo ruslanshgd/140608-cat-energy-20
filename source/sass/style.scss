@@ -5,7 +5,6 @@
 @import "base/title";
 @import "base/title-text";
 @import "base/title-line";
-
 @import "layout/container";
 @import "layout/page";
 @import "layout/page-header";
@@ -13,11 +12,10 @@
 @import "layout/main-nav";
 @import "layout/site-list";
 @import "layout/toggle-menu";
-
 @import "components/button";
-
 @import "blocks/categories";
 @import "blocks/social";
+@import "blocks/developer";
 @import "blocks/promo";
 @import "blocks/howitsworks";
 @import "blocks/example";
@@ -29,9 +27,9 @@
 @import "blocks/additional-list";
 @import "blocks/programs";
 @import "blocks/form-field";
+@import "blocks/form-type.scss";
 @import "blocks/contacts";
 @import "blocks/map";
-@import "blocks/form-type.scss";
 
 *,
 *::before,

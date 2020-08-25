@@ -28,12 +28,14 @@
 }
 
 .button--light {
-  background: #f2f2f2;
-  color: #444444;
+  background: $color-grey;
+  color: $color-dark-grey;
 }
+
 .button--light:hover {
-  background: #ebebeb;
+  background: $color-border-light;
 }
+
 .button--light:active {
   color: rgba(17, 17, 17, 0.3);
 }
