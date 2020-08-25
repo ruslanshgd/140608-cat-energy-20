@@ -1,4 +1,4 @@
-.social__list {
+.social {
   width: 100%;
   list-style: none;
   margin: 0;
@@ -13,8 +13,34 @@
   margin: 0 16px;
   cursor: pointer;
 }
+.social__icon {
+  fill: #666666;
+  transition: 0.3s;
+}
+.social__icon:hover {
+  fill: $color-primary;
+}
+.social__icon:active {
+  opacity: 0.3;
+}
 @media (min-width: $tablet) {
-  .social__list {
-    border: 0;
+  .social__item {
+    margin: 0 10px;
+  }
+  .social {
+    border-top: none;
+    border-bottom: none;
+  }
+  .social__icon--vk {
+    width: 31px;
+    height: 19px;
+  }
+  .social__icon--insta {
+    width: 23px;
+    height: 23px;
+  }
+  .social__icon--fb {
+    width: 14px;
+    height: 28px;
   }
 }
