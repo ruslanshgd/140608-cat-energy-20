@@ -29,6 +29,18 @@
   font-size: 16px;
   line-height: 18px;
 }
+.field__control:focus {
+  outline: 2px solid $color-dark-grey;
+}
+.form-field__control:focus:invalid  {
+  outline: 2px solid $color-invalid;
+}
+.field__control:focus ~ svg {
+  fill: $color-primary;
+}
+.field__control:focus:invalid + svg {
+  fill: $color-invalid;
+}
 .form-field__control--icon {
   padding: 13px 45px 13px 15px;
   background-size: 18px 20px;

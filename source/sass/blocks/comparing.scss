@@ -28,6 +28,12 @@
   cursor: pointer;
   transition: 0.3s;
 }
+.comparing__button:hover {
+  border-bottom: 1px solid #d9d9d9;
+}
+.comparing__button:active {
+  border-bottom: none;
+}
 .comparing__progress {
   position: relative;
   max-width: 84px;
@@ -105,6 +111,10 @@
     transform: translate(-50%, -50%);
     box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
     transition: 0.3s;
+  }
+  .comparing__bar:active {
+    border: 1px solid $color-primary;
+    box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.15);
   }
   .comparing__bar::after {
     content: "";

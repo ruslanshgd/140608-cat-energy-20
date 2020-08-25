@@ -42,7 +42,7 @@
   font-family: $font-secondary;
   font-size: 14px;
   line-height: 18px;
-  color: $color-dark-grey;
+  color: $color-black;
   padding-bottom: 20px;
   margin-bottom: 19px;
   border-bottom: 1px solid $color-border;
@@ -56,6 +56,7 @@
   z-index: 1;
   padding-right: 15px;
   background: $color-grey;
+  transition: 0.3s;
 }
 .categories__link::after {
   content: "";
@@ -68,6 +69,9 @@
   transform: translateY(-50%);
   z-index: -1;
   transition: 0.3s;
+}
+.categories__link:active {
+  opacity: 0.3;
 }
 .categories__link:hover::after {
   right: -32px;
@@ -148,6 +152,7 @@
     margin-bottom: 70px;
   }
   .categories__description {
+    font-size: 16px;
     margin-bottom: 15px;
   }
 }

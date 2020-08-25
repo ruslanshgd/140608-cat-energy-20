@@ -83,13 +83,10 @@
     text-align: center;
   }
   .product__content tr {
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid $color-grey-4;
   }
   .product__content td {
     font-size: 16px;
     padding: 8px 0;
   }
-}
-@media (min-width: $desktop) {
-
 }

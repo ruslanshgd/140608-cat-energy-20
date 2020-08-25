@@ -35,7 +35,7 @@
   margin-right: 20px;
   width: 60px;
   height: 60px;
-  background-color: #68b738;
+  background-color: $color-primary;
   background-size: 50px;
 }
 .howitsworks__item--leaf::before {
@@ -115,5 +115,20 @@
     padding-left: 40px;
     padding-right: 40px;
     margin-bottom: 0px;
+  }
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .howitsworks__item--leaf::before {
+    background-image: url(../img/advantage-leaf@2x.png);
+  }
+  .howitsworks__item--powder::before {
+    background-image: url(../img/advantage-powder@2x.png);
+  }
+  .howitsworks__item--dining::before {
+    background-image: url(../img/advantage-dining@2x.png);
+  }
+  .howitsworks__item--clock::before {
+    background-image: url(../img/advantage-clock@2x.png);
   }
 }

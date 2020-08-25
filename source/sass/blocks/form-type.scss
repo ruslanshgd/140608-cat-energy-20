@@ -56,7 +56,7 @@
 	margin-bottom: 4px;
 }
 .form-type:hover::after {
-	border: 1px solid #bfbfbf;
+	border: 1px solid $color-grey-3;
 }
 .form-type:active {
 	opacity: 0.3;

@@ -5,7 +5,6 @@
   max-width: 270px;
   color: $color-black;
 }
-
 @media (min-width: $tablet) {
   .title-text {
     font-size: 20px;
@@ -15,7 +14,6 @@
     max-width: 330px;
   }
 }
-
 @media (min-width: $desktop) {
   .title-text {
     font-size: 20px;

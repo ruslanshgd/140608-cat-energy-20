@@ -28,10 +28,12 @@
   color: $color-black;
 }
 .example__description {
+  font-family: $font-secondary;
   margin-bottom: 25px;
   margin-top: -5px;
 }
 .example__summary {
+  color: $color-black;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 35px;
@@ -68,6 +70,7 @@
   color: $color-black;
 }
 .example-list__description {
+  font-family: $font-secondary;
   display: block;
   font-size: 12px;
   line-height: 1;
@@ -141,7 +144,7 @@
     right: 0;
     height: 72%;
     width: 100%;
-    background: linear-gradient(to right, $color-grey 66.6%, #eaeaea 28.2%);
+    background: linear-gradient(to right, $color-grey 66.2%, $color-border-lightest 28.2%);
     z-index: -1;
   }
   .example__row {

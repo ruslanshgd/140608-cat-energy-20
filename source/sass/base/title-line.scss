@@ -12,14 +12,12 @@
   margin-top: 0;
   background: $color-white;
 }
-
 .title-line::before {
   right: 0;
 }
 .title-line::after {
   left: 20px;
 }
-
 .title-line::after, .title-line::before {
   content: "";
   position: absolute;
@@ -30,11 +28,9 @@
   background: $color-primary;
   z-index: -1;
 }
-
 .title-line--width {
   margin-right: 77px;
 }
-
 @media (min-width: $tablet) {
   .title-line {
     padding-right: 40px;
@@ -49,7 +45,6 @@
     margin-bottom: 80px;
   }
 }
-
 @media (min-width: $desktop) {
   .title-line--width {
     margin-bottom: 76px;
