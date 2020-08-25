@@ -2,16 +2,19 @@
   display: flex;
   flex-wrap: wrap;
 }
+
 .categories__column {
   flex: 0 0 100%;
   max-width: 100%;
 }
+
 .categories__item {
   position: relative;
   background-color: $color-grey;
   padding: 30px 20px 20px;
   margin-bottom: 20px;
 }
+
 .categories__img {
   position: absolute;
   top: 25px;
@@ -20,15 +23,16 @@
   background: $color-primary;
   border-radius: 50%;
 }
+
 .categories__icon {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
 .categories__title {
-  margin-top: 0px;
+  margin-top: 0;
   padding-left: 72px;
   font-size: 24px;
   line-height: 37px;
@@ -37,6 +41,7 @@
   color: $color-black;
   margin-bottom: 35px;
 }
+
 .categories__description {
   margin: 0;
   font-family: $font-secondary;
@@ -47,6 +52,7 @@
   margin-bottom: 19px;
   border-bottom: 1px solid $color-border;
 }
+
 .categories__link {
   position: relative;
   line-height: 16px;
@@ -58,6 +64,7 @@
   background: $color-grey;
   transition: 0.3s;
 }
+
 .categories__link::after {
   content: "";
   position: absolute;
@@ -70,53 +77,64 @@
   z-index: -1;
   transition: 0.3s;
 }
+
 .categories__link:active {
   opacity: 0.3;
 }
+
 .categories__link:hover::after {
   right: -32px;
 }
+
 @media (min-width: $tablet) {
   .categories {
     margin-top: 44px;
   }
+
   .categories__item {
     padding: 75px 313px 58px 54px;
     margin-bottom: 31px;
   }
+
   .categories__img {
     right: 45px;
     top: 90px;
     width: 200px;
     height: 200px;
   }
+
   .categories__icon--slim {
     top: 43%;
     width: 69%;
     height: 100%;
   }
+
   .categories__icon--pro {
     top: 52%;
     width: 133%;
     height: 100%;
   }
+
   .categories__title {
     font-size: 36px;
     line-height: 36px;
     padding-left: 0;
     margin-bottom: 26px;
   }
+
   .categories__description {
     line-height: 24px;
     margin-bottom: 36px;
     border-bottom: none;
   }
+
   .categories__link {
     font-size: 20px;
     line-height: 20px;
     padding-right: 25px;
   }
 }
+
 @media (min-width: $desktop) {
   .categories {
     margin-left: -40px;
@@ -124,33 +142,38 @@
     margin-top: 0;
     margin-bottom: 56px;
   }
+
   .categories__column {
     flex: 0 0 50%;
     max-width: 50%;
     padding-left: 40px;
     padding-right: 40px;
   }
+
   .categories__item {
     padding: 79px 56px 60px;
     margin-bottom: 0;
   }
+
   .categories__img {
     top: 45px;
     right: inherit;
     width: 100px;
     height: 100px;
   }
+
   .categories__icon {
     position: absolute;
     left: 50%;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
+
   .categories__title {
     padding-left: 160px;
     margin-bottom: 70px;
   }
+
   .categories__description {
     font-size: 16px;
     margin-bottom: 15px;

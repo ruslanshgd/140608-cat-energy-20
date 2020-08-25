@@ -5,12 +5,15 @@
   margin-bottom: 13px;
   color: $color-dark-grey;
 }
+
 .form-field:last-child {
   margin-bottom: 0;
 }
+
 .form-field.form-field--ident {
   margin-bottom: 17px;
 }
+
 .form-field__text {
   font-size: 16px;
   font-weight: 400;
@@ -19,6 +22,7 @@
   text-transform: uppercase;
   color: $color-dark-grey;
 }
+
 .form-field__control {
   width: 100%;
   border: 1px solid $color-border-light;
@@ -29,22 +33,28 @@
   font-size: 16px;
   line-height: 18px;
 }
+
 .field__control:focus {
   outline: 2px solid $color-dark-grey;
 }
-.form-field__control:focus:invalid  {
+
+.form-field__control:focus:invalid {
   outline: 2px solid $color-invalid;
 }
+
 .field__control:focus ~ svg {
   fill: $color-primary;
 }
-.field__control:focus:invalid + svg {
+
+.field__control:focus:invalid ~ svg {
   fill: $color-invalid;
 }
+
 .form-field__control--icon {
   padding: 13px 45px 13px 15px;
   background-size: 18px 20px;
 }
+
 .form-field__icon {
   position: absolute;
   top: 50%;
@@ -52,22 +62,27 @@
   transform: translateY(-50%);
   transition: 0.3s;
 }
+
 .form-field__control::placeholder {
   color: $color-dark-grey;
 }
+
 @media (min-width: $tablet) {
   .form-field {
     margin-bottom: 21px;
   }
+
   .form-field__text {
     font-size: 20px;
   }
+
   .form-field__control {
     padding: 10px 20px;
     font-size: 20px;
     line-height: 20px;
   }
 }
+
 @media (min-width: $desktop) {
   .form-field__icon {
     right: 20px;

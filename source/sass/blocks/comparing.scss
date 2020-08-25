@@ -2,14 +2,17 @@
   max-width: 280px;
   margin: 0 auto;
 }
+
 .comparing__img {
   display: block;
   margin-left: -20px;
   max-width: inherit;
 }
+
 .comparing__img--after {
   display: none;
 }
+
 .comparing__range {
   display: flex;
   justify-content: space-between;
@@ -18,6 +21,7 @@
   margin: 0 auto;
   padding: 30px 0 35px;
 }
+
 .comparing__button {
   padding: 0;
   margin: 0;
@@ -28,12 +32,15 @@
   cursor: pointer;
   transition: 0.3s;
 }
+
 .comparing__button:hover {
   border-bottom: 1px solid #d9d9d9;
 }
+
 .comparing__button:active {
   border-bottom: none;
 }
+
 .comparing__progress {
   position: relative;
   max-width: 84px;
@@ -43,6 +50,7 @@
   border-radius: 50px;
   background: $color-white;
 }
+
 .comparing__progress::after {
   content: "";
   position: absolute;
@@ -61,43 +69,52 @@
   .comparing {
     margin-top: 24px;
   }
+
   .comparing__images {
     position: relative;
     display: flex;
     max-width: inherit;
     height: 560px;
   }
+
   .comparing__img {
     position: absolute;
     left: 0;
     right: 0;
     margin: 0 auto;
   }
+
   .comparing__img--before {
     clip: rect(auto, 345px, auto, auto);
   }
+
   .comparing__img--after {
     display: block;
     clip: rect(auto, auto, auto, 345px);
   }
+
   .comparing__range {
     max-width: 575px;
     padding: 10px 0 70px;
   }
+
   .comparing__button {
     font-size: 20px;
     padding: 5px 0;
     border-bottom: 1px dotted $color-border;
   }
+
   .comparing__progress {
     max-width: inherit;
     height: 6px;
     margin: 0 25px;
     background: $color-border;
   }
+
   .comparing__progress::after {
     display: none;
   }
+
   .comparing__bar {
     position: absolute;
     top: 50%;
@@ -112,10 +129,12 @@
     box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
     transition: 0.3s;
   }
+
   .comparing__bar:active {
     border: 1px solid $color-primary;
     box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.15);
   }
+
   .comparing__bar::after {
     content: "";
     display: block;
@@ -131,21 +150,25 @@
     background-color: $color-primary;
   }
 }
+
 @media (min-width: $desktop) {
   .comparing {
     position: relative;
     margin-top: 10px;
   }
+
   .comparing__img {
     left: -100px;
   }
+
   .comparing__images {
     margin-top: 11px;
-    // height: 500px;
   }
+
   .comparing__img--before {
     clip: rect(auto, 365px, auto, auto);
   }
+
   .comparing__img--after {
     clip: rect(auto, auto, auto, 365px);
   }
