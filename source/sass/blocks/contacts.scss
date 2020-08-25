@@ -21,7 +21,7 @@
   line-height: 21px;
   max-width: 160px;
   width: 100%;
-  font-family: "Arial", "Tahoma", sans-serif;
+  font-family: $font-secondary;
 }
 
 @media (min-width: $tablet) {
@@ -51,16 +51,12 @@
     top: 0%;
     max-width: 570px;
     width: 100%;
-    background: #ffffff;
-    padding: 32px 35px;
-    transform: translateY(48%);
+    height: 200px;
+    background: $color-white;
+    padding: 65px 76px;
+    transform: translateY(49%);
   }
-
-  .contacts__title {
-
-  }
-
   .contacts__text {
-
+    text-align: left;
   }
 }

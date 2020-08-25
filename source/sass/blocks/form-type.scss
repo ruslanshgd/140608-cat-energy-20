@@ -1,6 +1,5 @@
 .form-type {
 	font-size: 16px;
-	color: #111111;
 	position: relative;
 	display: block;
 	padding-left: 45px;
@@ -10,15 +9,8 @@
 	cursor: pointer;
 	-webkit-transition: 0.3s;
 	transition: 0.3s;
-	color: #222222;
+	color: $color-dark-grey-2;
 }
-
-@media (min-width: $tablet) {
-	.form-type {
-		font-size: 20px;
-	}
-}
-
 .form-type::after {
 	content: "";
 	position: absolute;
@@ -28,18 +20,10 @@
 	transform: translateY(-50%);
 	width: 30px;
 	height: 30px;
-	border: 1px solid #d9d9d9;
+	border: 1px solid $color-border;
 	-webkit-transition: 0.3s;
 	transition: 0.3s;
 }
-
-@media (min-width: $tablet) {
-	.form-type::after {
-		width: 40px;
-		height: 40px;
-	}
-}
-
 .form-type::before {
 	content: "";
 	display: none;
@@ -54,17 +38,9 @@
 	-webkit-transform: translateY(-50%) rotate(45deg);
 	transform: translateY(-50%) rotate(45deg);
 }
-
-@media (min-width: $tablet) {
-	.form-type::before {
-		left: 15px;
-	}
-}
-
 .form-type--radio::after {
 	border-radius: 50%;
 }
-
 .form-type--radio::before {
 	width: 12px;
 	height: 12px;
@@ -73,45 +49,38 @@
 	background: $color-primary;
 	margin-top: 0;
 }
-
-@media (min-width: $tablet) {
-	.form-type--radio::before {
-		left: 11px;
-		width: 18px;
-		height: 18px;
-	}
-}
-
 .form-type--radio:last-child {
 	margin-bottom: 0;
 }
-
-@media (min-width: $tablet) {
-	.form-type--radio {
-		margin-bottom: 7px;
-	}
-}
-
 .form-type--check {
 	margin-bottom: 4px;
 }
-
-@media (min-width: $tablet) {
-	.form-type--check {
-		margin-bottom: 32px;
-	}
-}
-
-@media (min-width: $tablet) {
-	.form-type {
-		padding-left: 62px;
-	}
-}
-
 .form-type:hover::after {
 	border: 1px solid #bfbfbf;
 }
-
 .form-type:active {
 	opacity: 0.3;
+}
+@media (min-width: $tablet) {
+	.form-type {
+		font-size: 20px;
+  }
+  .form-type::after {
+		width: 40px;
+		height: 40px;
+	}
+.form-type::before {
+		left: 15px;
+  }
+  .form-type--radio::before {
+		left: 11px;
+		width: 18px;
+		height: 18px;
+  }
+  .form-type--check {
+		margin-bottom: 32px;
+	}
+  .form-type {
+      padding-left: 60px;
+  }
 }

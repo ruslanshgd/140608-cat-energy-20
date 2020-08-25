@@ -10,7 +10,7 @@
   margin-left: -40px;
   margin-bottom: 35px;
   margin-top: 0;
-  background: #ffffff;
+  background: $color-white;
 }
 
 .title-line::before {
@@ -27,7 +27,7 @@
   width: 100vw;
   height: 2px;
   margin-top: 2px;
-  background: #68b738;
+  background: $color-primary;
   z-index: -1;
 }
 
@@ -35,14 +35,10 @@
   margin-right: 77px;
 }
 
-.title-line--width::after {
-  top: 30%;
-}
-
 @media (min-width: $tablet) {
   .title-line {
     padding-right: 40px;
-    margin-bottom: 75px;
+    margin-bottom: 69px;
     font-size: 36px;
   }
   .title-line--ident {
@@ -59,6 +55,6 @@
     margin-bottom: 76px;
   }
   .title-line--ident {
-    margin-bottom: 64px;
+    margin-bottom: 50px;
   }
 }

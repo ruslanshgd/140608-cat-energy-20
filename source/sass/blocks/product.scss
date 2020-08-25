@@ -11,7 +11,7 @@
   right: 0;
   bottom: 0;
   height: 1px;
-  background: #d9d9d9;
+  background: $color-border;
   width: calc(100% + 40px);
 }
 .product__img {
@@ -44,17 +44,16 @@
   border-collapse: collapse;
   font-size: 12px;
   line-height: 16px;
-  font-family: "Arial", "Tahoma", sans-serif;
+  font-family: $font-secondary;
 }
 .product__content td:last-child {
   text-align: right;
 }
-
 @media (min-width: $tablet) {
   .product {
     flex-direction: column;
     padding: 40px;
-    background: #f2f2f2;
+    background: $color-grey;
   }
   .product::after {
     display: none;

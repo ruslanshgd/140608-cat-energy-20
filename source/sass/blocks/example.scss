@@ -3,7 +3,7 @@
   margin-right: -20px;
   padding-right: 20px;
   padding-left: 20px;
-  background: #f2f2f2;
+  background: $color-grey;
 }
 .example__row {
   display: flex;
@@ -50,7 +50,7 @@
   width: 100%;
   padding: 15px 10px 5px;
   text-align: center;
-  border: 1px solid #d9d9d9;
+  border: 1px solid $color-border;
   border-radius: 5px;
 }
 .example-list__wrapper {
@@ -59,7 +59,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: -20px;
-  background: #f2f2f2;
+  background: $color-grey;
 }
 .example-list__value {
   font-size: 24px;
@@ -68,15 +68,17 @@
   color: $color-black;
 }
 .example-list__description {
+  display: block;
   font-size: 12px;
   line-height: 1;
   margin: 8px 0 0;
   color: $color-dark-grey;
 }
+
 @media (min-width: $tablet) {
   .example {
-    border-top: 1px solid #d9d9d9;
-    background: linear-gradient(to top, #f2f2f2 42.7%, $color-white 30%);
+    border-top: 1px solid $color-border;
+    background: linear-gradient(to top, $color-grey 42.7%, $color-white 30%);
   }
   .example__row {
     margin-left: -30px;
@@ -139,7 +141,7 @@
     right: 0;
     height: 72%;
     width: 100%;
-    background: linear-gradient(to right, #f2f2f2 66.6%, #eaeaea 28.2%);
+    background: linear-gradient(to right, $color-grey 66.6%, #eaeaea 28.2%);
     z-index: -1;
   }
   .example__row {
@@ -157,8 +159,8 @@
     max-width: 60%;
   }
   .example__description {
-    margin-bottom: 47px;
-    margin-top: 148px;
+    margin-bottom: 50px;
+    margin-top: 143px;
   }
   .example-list {
     margin-bottom: 55px;
@@ -167,7 +169,7 @@
     max-width: inherit;
     padding: 0;
     margin-bottom: -25px;
-    background: #f2f2f2;
+    background: $color-grey;
   }
   .example__summary {
     max-width: inherit;

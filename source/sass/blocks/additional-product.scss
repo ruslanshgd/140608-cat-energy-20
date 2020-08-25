@@ -30,7 +30,7 @@
   background-size: cover;
 }
 .additional-product__cta svg {
-  fill: #ffffff;
+  fill: $color-white;
   display: block;
   margin-top: 13px;
 }
@@ -38,9 +38,8 @@
   max-width: 150px;
   margin: 0;
   line-height: 20px;
-  font-family: "Arial", "Tahoma", sans-serif;
+  font-family: $font-secondary;
 }
-
 @media (min-width: $tablet) {
   .additional-product {
     margin-bottom: 75px;
@@ -87,7 +86,6 @@
     padding-left: 40px;
     padding-right: 40px;
   }
-
   .additional-product__cta {
     flex-direction: column;
     min-height: 290px;
@@ -96,9 +94,23 @@
   .additional-product__cta svg {
     margin-top: 20px;
   }
-
   .additional-product__proposal {
     margin: 0 auto;
     text-align: center;
+  }
+}
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .additional-product__cta {
+    background-image: url(../img/gift-photo-mobile@2x.jpg);
+  }
+}
+@media (min-resolution: 144dpi) and (min-width: 768px), (min-resolution: 1.5dppx) and (min-width: 768px) {
+  .additional-product__cta {
+    background-image: url(../img/gift-photo-tablet@2x.jpg);
+  }
+}
+@media (min-resolution: 144dpi) and (min-width: 1440px), (min-resolution: 1.5dppx) and (min-width: 1440px) {
+  .additional-product__cta {
+    background-image: url(../img/gift-photo-desktop@2x.jpg);
   }
 }

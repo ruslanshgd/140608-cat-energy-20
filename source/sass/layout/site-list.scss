@@ -8,24 +8,20 @@
   text-transform: uppercase;
   margin-left: -20px;
   margin-right: -20px;
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid $color-border-light;
   transition: 0.3s;
   text-decoration: none;
 }
-
 .site-list__link:hover {
   opacity: 0.6;
 }
-
 .site-list__link:active {
   opacity: 0.3;
 }
-
 @media (min-width: $tablet) {
   .site-list {
     display: flex;
   }
-
   .site-list__link {
     font-size: 18px;
     line-height: 24px;
@@ -33,7 +29,6 @@
     border: none;
     padding: 10px 11px;
   }
-
   .site-list__link--active::after {
     content: "";
     position: absolute;
@@ -45,7 +40,6 @@
     width: calc(100% - 24px);
   }
 }
-
 @media (min-width: $desktop) {
   .site-list__link {
     padding: 10px 21px;

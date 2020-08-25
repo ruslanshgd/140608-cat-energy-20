@@ -26,8 +26,6 @@
   text-transform: uppercase;
   font-size: 16px;
   cursor: pointer;
-  color: #111111;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .comparing__progress {
@@ -35,9 +33,9 @@
   max-width: 84px;
   width: 100%;
   height: 14px;
-  border: 1px solid #d9d9d9;
+  border: 1px solid $color-border;
   border-radius: 50px;
-  background: #ffffff;
+  background: $color-white;
 }
 .comparing__progress::after {
   content: "";
@@ -65,10 +63,8 @@
   }
   .comparing__img {
     position: absolute;
-    bottom: 0;
     left: 0;
     right: 0;
-    max-width: 100%;
     margin: 0 auto;
   }
   .comparing__img--before {
@@ -85,13 +81,13 @@
   .comparing__button {
     font-size: 20px;
     padding: 5px 0;
-    border-bottom: 1px dotted #d9d9d9;
+    border-bottom: 1px dotted $color-border;
   }
   .comparing__progress {
     max-width: inherit;
     height: 6px;
     margin: 0 25px;
-    background: #d9d9d9;
+    background: $color-border;
   }
   .comparing__progress::after {
     display: none;
@@ -103,8 +99,8 @@
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    border: 1px solid #dcdcdc;
-    background: #ffffff;
+    border: 1px solid $color-comparing-bar;
+    background: $color-white;
     cursor: pointer;
     transform: translate(-50%, -50%);
     box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
@@ -131,6 +127,20 @@
     margin-top: 10px;
   }
   .comparing__img {
-    left: 50%;
+    left: -100px;
+  }
+  .comparing__images {
+    margin-top: 11px;
+    // height: 500px;
+  }
+  .comparing__img--before {
+    clip: rect(auto, 365px, auto, auto);
+  }
+  .comparing__img--after {
+    clip: rect(auto, auto, auto, 365px);
+  }
+
+  .comparing__range {
+    padding-bottom: 50px;
   }
 }
