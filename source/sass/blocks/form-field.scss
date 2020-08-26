@@ -42,11 +42,11 @@
   outline: 2px solid $color-invalid;
 }
 
-.field__control:focus ~ svg {
+.form-field__control:focus ~ .form-field__icon {
   fill: $color-primary;
 }
 
-.field__control:focus:invalid ~ svg {
+.form-field__control:focus:invalid ~ .form-field__icon {
   fill: $color-invalid;
 }
 
