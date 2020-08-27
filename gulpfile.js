@@ -117,7 +117,7 @@ exports.clean = clean;
 // start
 
 exports.default = gulp.series(
- styles, server, watcher
+  styles, server, watcher
 );
 
 // build
