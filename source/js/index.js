@@ -3,8 +3,7 @@
 var toogleMenu = document.querySelector('.toggle-menu');
 var navigation = document.querySelector('.main-nav');
 
-navigation.classList.remove('main-nav--no-js');
-toogleMenu.classList.remove('toggle-menu--no-js');
+navigation.classList.remove('main-nav--open');
 
 toogleMenu.addEventListener('click', function() {
   toogleMenu.classList.toggle('toggle-menu--close');
