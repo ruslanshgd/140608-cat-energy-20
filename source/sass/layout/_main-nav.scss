@@ -31,19 +31,4 @@
   .main-nav__list {
     margin-top: 20px;
   }
-
-  .page-header__logo {
-    max-width: auto;
-    height: 50px;
-  }
-}
-
-@media (min-width: $desktop) {
-  .page-header--background .site-list__link {
-    color: $color-white;
-  }
-
-  .page-header--background .site-list__link--active::after {
-    background: $color-white;
-  }
 }

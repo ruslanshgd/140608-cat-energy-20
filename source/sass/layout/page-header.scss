@@ -44,6 +44,10 @@
 }
 
 @media (min-width: $tablet) {
+  .page-header__logo {
+    max-width: auto;
+    height: 50px;
+  }
   .page-header--background::after {
     display: none;
   }
@@ -70,5 +74,13 @@
     background-position: 0%;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .page-header--background .site-list__link {
+    color: $color-white;
+  }
+
+  .page-header--background .site-list__link--active::after {
+    background: $color-white;
   }
 }

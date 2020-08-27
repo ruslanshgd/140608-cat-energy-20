@@ -20,9 +20,6 @@ const html = () => {
   .pipe(htmlmin({ collapseWhitespace: true }))
   .pipe(gulp.dest("build"))
 }
-
-
-
 exports.html = html;
 
 // Images
@@ -34,30 +31,34 @@ const images = () => {
       imagemin.svgo()
   ]))
 }
-
 exports.images = images;
 
 // Webp
-
 const makewebp = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("source/img"))
 }
-
 exports.makewebp = makewebp;
 
+// Sprite
 const sprite = () => {
   return gulp.src("source/img/**/icon-*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"))
 }
-
 exports.sprite = sprite;
 
-// Styles
+// fonts
+const fonts = () => {
+  return gulp.src("source/fonts/**")
+  .pipe(gulp.dest("build/fonts"))
+}
+exports.sprite = sprite;
 
+
+// Styles
 const styles = () => {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
@@ -72,21 +73,32 @@ const styles = () => {
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
-
 exports.styles = styles;
 
-// js
+// Np Minification Styles
+const nominstyles = () => {
+  return gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
+    .pipe(sync.stream());
+}
+exports.nominstyles = nominstyles;
 
+// js
 const js = () => {
   return gulp.src("source/js/**/*.js")
   .pipe(uglify())
   .pipe(gulp.dest("build/js"))
 }
-
 exports.js = js;
 
 // Server
-
 const server = (done) => {
   sync.init({
     server: {
@@ -98,18 +110,15 @@ const server = (done) => {
   });
   done();
 }
-
 exports.server = server;
 
 // Watcher
-
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/*.html").on("change", sync.reload);
 }
 
 // copy
-
 const copy = () => {
   return gulp.src([
     "source/img/**",
@@ -120,7 +129,6 @@ const copy = () => {
   })
   .pipe(gulp.dest("build"));
 }
-
 exports.copy = copy;
 
 // clean
@@ -130,13 +138,10 @@ const clean = () => {
 exports.clean = clean;
 
 // build
-
-const build = gulp.series(clean, copy, styles, js, images, makewebp, sprite, html);
-
+const build = gulp.series(clean, copy, styles, nominstyles, fonts, js, images, makewebp, sprite, html);
 exports.build = build;
 
 // start
-
 exports.default = gulp.series(
   build, server, watcher
 );
