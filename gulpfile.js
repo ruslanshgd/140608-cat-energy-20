@@ -141,7 +141,7 @@ exports.clean = clean;
 const build = gulp.series(clean, copy, styles, nominstyles, fonts, js, images, makewebp, sprite, html);
 exports.build = build;
 
-// start
+// start task
 exports.default = gulp.series(
   build, server, watcher
 );
