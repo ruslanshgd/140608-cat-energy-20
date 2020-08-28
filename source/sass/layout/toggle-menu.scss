@@ -12,6 +12,10 @@
   cursor: pointer;
 }
 
+.toggle-menu--open {
+  display: none;
+}
+
 .toggle-menu::before {
   content: "";
   position: absolute;
