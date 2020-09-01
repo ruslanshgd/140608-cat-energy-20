@@ -33,8 +33,8 @@
 
 .example__description {
   font-family: $font-secondary;
-  margin-bottom: 25px;
   margin-top: -5px;
+  margin-bottom: 28px;
 }
 
 .example__summary {
@@ -111,6 +111,11 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+  }
+
+  .example__description {
+    margin-top: -5px;
+    margin-bottom: 35px;
   }
 
   .example-list {

@@ -1,6 +1,6 @@
 .product-more {
   position: relative;
-  margin-top: 77px;
+  margin-top: 84px;
   text-align: center;
 }
 
@@ -23,12 +23,14 @@
   color: $color-black;
   line-height: 20px;
   text-transform: uppercase;
-  margin-bottom: 7px;
+  margin-bottom: 8px;
 }
 
 .product-more__text {
+  font-family: $font-secondary;
   font-size: 12px;
-  margin-bottom: 23px;
+  margin-top: 0;
+  margin-bottom: 22px;
 }
 
 @media (min-width: $tablet) {
@@ -61,5 +63,15 @@
     width: 100%;
     margin: 0 auto 85px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .product-more__title {
+    margin: 0 auto 22px;
+  }
+
+  .product-more__text {
+    margin: 0 auto 81px;
   }
 }

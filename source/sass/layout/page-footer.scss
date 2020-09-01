@@ -1,5 +1,5 @@
 .page-footer {
-  padding: 30px 0;
+  padding: 5px 0;
   background-color: $color-grey;
 }
 
@@ -49,6 +49,10 @@
 }
 
 @media (min-width: $tablet) {
+  .page-footer {
+    padding: 28px 0;
+  }
+
   .page-footer__row {
     margin-left: -30px;
     margin-right: -30px;
@@ -84,6 +88,10 @@
 }
 
 @media (min-width: $desktop) {
+  .page-footer {
+    padding: 38px 0;
+  }
+
   .page-footer__row {
     margin-left: -40px;
     margin-right: -40px;

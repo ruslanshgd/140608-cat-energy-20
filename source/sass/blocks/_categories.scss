@@ -39,7 +39,7 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $color-black;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
 }
 
 .categories__description {
@@ -92,13 +92,17 @@
   }
 
   .categories__item {
-    padding: 75px 313px 58px 54px;
+    padding: 75px 313px 59px 53px;
     margin-bottom: 31px;
   }
 
+  .categories__item--pro {
+    margin-bottom: 41px;
+  }
+
   .categories__img {
-    right: 45px;
-    top: 90px;
+    right: 60px;
+    top: 85px;
     width: 200px;
     height: 200px;
   }

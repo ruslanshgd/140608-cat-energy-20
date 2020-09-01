@@ -22,7 +22,7 @@
   padding: 0;
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .programs__field input[type="checkbox"],
@@ -36,7 +36,7 @@
 }
 
 .programs__field--line {
-  padding: 15px 20px;
+  padding: 12px 20px;
   margin-left: -20px;
   margin-right: -20px;
   border-top: 1px solid $color-border-light;
@@ -46,7 +46,7 @@
 .programs__textarea {
   width: 100%;
   border: 1px solid $color-border-light;
-  padding: 14px 13px;
+  padding: 8px 13px;
   transition: 0.3s;
   height: 151px;
   text-transform: uppercase;
@@ -56,18 +56,24 @@
 .programs__explainer {
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-family: $font-secondary;
 }
 
 @media (min-width: $tablet) {
   .programs {
+    padding-left: 40px;
+    padding-right: 40px;
     margin-bottom: 70px;
   }
 
   .programs__explainer {
     margin: 12px 0;
     text-align: left;
+  }
+
+  .programs__field {
+    margin-bottom: 70px;
   }
 
   .programs__field--ident {
@@ -106,14 +112,13 @@
   .programs__field--line {
     margin-left: 0;
     margin-right: 0;
-    padding: 27px;
-    padding-bottom: 18px;
+    padding: 21px 27px 24px;
     border: 1px solid $color-border-light;
   }
 
   .programs__textarea {
     height: 174px;
-    padding: 8px 17px;
+    padding: 28px 17px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -121,6 +126,7 @@
 
 @media (min-width: $desktop) {
   .programs {
+    padding: 0;
     margin-bottom: 80px;
   }
 
@@ -154,5 +160,8 @@
     max-width: 25%;
     padding-left: 40px;
     padding-right: 40px;
+  }
+  .programs__textarea {
+    padding: 14px 17px;
   }
 }

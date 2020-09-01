@@ -6,8 +6,8 @@
 }
 
 .additional-list__item {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 14px;
+  padding-bottom: 18px;
   border-bottom: 1px solid $color-border;
 }
 
@@ -92,7 +92,7 @@
 
 @media (min-width: $desktop) {
   .additional-list__item {
-    padding: 14.5px 0;
+    padding: 15.5px 0;
     border-left: none;
     border-right: none;
   }

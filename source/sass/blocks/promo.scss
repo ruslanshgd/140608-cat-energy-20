@@ -9,6 +9,7 @@
   line-height: 36px;
   font-weight: 400;
   color: $color-white;
+  margin-top: 28px;
   margin-bottom: 25px;
 }
 
@@ -22,7 +23,7 @@
 
 .promo__image {
   display: block;
-  margin: 0 auto 4px;
+  margin: 0 auto 0px;
 }
 
 @media (min-width: $tablet) {
@@ -39,6 +40,7 @@
     font-size: 60px;
     line-height: 60px;
     color: $color-black;
+    margin-top: 36px;
     margin-bottom: 40px;
   }
 
