@@ -36,7 +36,7 @@
 }
 
 .programs__field--line {
-  padding: 12px 20px;
+  padding: 14px 20px;
   margin-left: -20px;
   margin-right: -20px;
   border-top: 1px solid $color-border-light;
@@ -60,11 +60,15 @@
   font-family: $font-secondary;
 }
 
+.programs__field--ident {
+  margin-bottom: 33px;
+}
+
 @media (min-width: $tablet) {
   .programs {
     padding-left: 40px;
     padding-right: 40px;
-    margin-bottom: 70px;
+    margin-bottom: 74px;
   }
 
   .programs__explainer {
@@ -118,9 +122,13 @@
 
   .programs__textarea {
     height: 174px;
-    padding: 28px 17px;
+    padding: 8px 17px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .programs__field--ident {
+    margin-bottom: 25px;
   }
 }
 

@@ -81,9 +81,15 @@
     font-size: 20px;
     line-height: 20px;
   }
+  .form-field.form-field--ident {
+    margin-bottom: 16px;
+  }
 }
 
 @media (min-width: $desktop) {
+  .form-field.form-field--ident {
+    margin-bottom: 0;
+  }
   .form-field__icon {
     right: 20px;
   }

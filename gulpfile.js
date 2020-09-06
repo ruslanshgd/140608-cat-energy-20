@@ -150,6 +150,6 @@ exports.default = gulp.series(
 // dev task
 
 const dev = gulp.series(
-  styles, server, watcher
+  server, watcher, styles
 );
 exports.dev = dev;

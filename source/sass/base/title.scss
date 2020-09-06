@@ -8,11 +8,24 @@
   padding-top: 32px;
 }
 
+.title--form {
+  padding-top: 22px;
+  margin-bottom: 34px;
+}
+
 @media (min-width: $tablet) {
+  .title--form {
+    margin-bottom: 0;
+  }
+
   .title {
     font-size: 60px;
-    padding-top: 45px;
-    margin-bottom: 65px;
+    padding-top: 55px; //45
+    margin-bottom: 55px; //55
+  }
+
+  .title--example {
+    padding-top: 35px;
   }
 
   .title--main {
@@ -23,7 +36,11 @@
 
 @media (min-width: $desktop) {
   .title {
-    padding-top: 78px;
+    padding-top: 68px;
     margin-bottom: 56px;
+  }
+
+  .title--example {
+    padding-top: 76px;
   }
 }

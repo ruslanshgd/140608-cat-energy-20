@@ -6,7 +6,15 @@
   color: $color-black;
 }
 
+.title-text--form {
+  margin-bottom: 40px;
+}
+
 @media (min-width: $tablet) {
+  .title-text--form {
+    margin-bottom: 0px;
+  }
+
   .title-text {
     font-size: 20px;
     line-height: 30px;
@@ -21,7 +29,7 @@
     font-size: 20px;
     line-height: 30px;
     margin-left: 0;
-    margin-bottom: 55px;
+    margin-bottom: 65px;
     max-width: 330px;
   }
 }

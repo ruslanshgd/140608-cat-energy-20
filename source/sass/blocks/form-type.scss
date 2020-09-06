@@ -55,7 +55,7 @@
 }
 
 .form-type--check {
-  margin-bottom: 4px;
+  margin-bottom: -2px;
 }
 
 .form-type:hover::after {
@@ -87,6 +87,12 @@
     height: 18px;
   }
 
+  .form-type--check {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: $desktop) {
   .form-type--check {
     margin-bottom: 32px;
   }

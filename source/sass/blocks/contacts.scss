@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 28px 0 25px;
+  padding: 33px 0 25px;
 }
 
 .contacts__title {
@@ -27,7 +27,7 @@
 
 @media (min-width: $tablet) {
   .contacts {
-    padding: 74px 42px;
+    padding: 64px 42px;
     align-items: flex-start;
   }
 

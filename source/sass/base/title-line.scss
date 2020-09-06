@@ -13,6 +13,15 @@
   background: $color-white;
 }
 
+.title-line--contacts {
+  margin-bottom: 43px;
+}
+
+.title-line--comment {
+  margin-top: 13px;
+  margin-bottom: 34px;
+}
+
 .title-line::before {
   right: 0;
 }
@@ -37,6 +46,10 @@
   margin-right: 77px;
 }
 
+.title-line--ident {
+  margin-bottom: 32px;
+}
+
 @media (min-width: $tablet) {
   .title-line {
     padding-right: 40px;
@@ -45,16 +58,33 @@
   }
 
   .title-line--ident {
-    margin-bottom: 50px;
+    margin-bottom: 42px;
   }
 
   .title-line--left {
     margin-left: 0;
     margin-bottom: 80px;
   }
+
+  .title-line--contacts {
+    margin-bottom: 80px;
+  }
+
+  .title-line--comment {
+    margin-top: 1px;
+    margin-bottom: 74px;
+  }
 }
 
 @media (min-width: $desktop) {
+  .title-line--contacts {
+    margin-bottom: 80px;
+  }
+
+  .title-line--comment {
+    margin-bottom: 71px;
+  }
+
   .title-line--width {
     margin-bottom: 76px;
   }
@@ -62,7 +92,7 @@
   .title-line--left {
     margin-top: 9px;
     margin-left: -40px;
-    margin-bottom: 84px;
+    margin-bottom: 79px;
   }
 
   .title-line--ident {
